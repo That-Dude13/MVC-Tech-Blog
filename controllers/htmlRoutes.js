@@ -27,6 +27,19 @@ router.get('/', async (req, res) => {
   }
 });
 
+router.get(`/dashboard`, async(req, res)=>{
+  res.render("dashboard")
+});
+
+router.get(`/`)
+
+router.get(`/login`, async(req, res)=>{
+  res.render("login")
+});
+
+router.get(`/`)
+
+
 router.get('/post/:id', async (req, res) => {
   try {
     const postData = await post.findByPk(req.params.id, {
