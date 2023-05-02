@@ -43,11 +43,16 @@ const signupFormHandler = async (event) => {
     }
   }
 };
-
-document
+if (document.location.pathname === "/login"){
+  document
   .querySelector('.login-form')
   .addEventListener('submit', loginFormHandler);
-
-document
+}else if (document.location.pathname ==="/signup"){
+  document
   .querySelector('.signup-form')
   .addEventListener('submit', signupFormHandler);
+
+}
+
+
+
