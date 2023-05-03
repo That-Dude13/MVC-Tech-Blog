@@ -12,12 +12,7 @@ const seedDatabase = async () => {
     returning: true,
   });
 
-  // for (const project of projectData) {
-  //   await Post.create({
-  //     ...project,
-  //     user_id: users[Math.floor(Math.random() * users.length)].id,
-  //   });
-  // }
+
 
   process.exit(0);
 };
